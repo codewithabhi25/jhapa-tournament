@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Multi-Game Tournament Hub</title>
+  <link rel="stylesheet" href="css.css" />
+  <script src="js.js" defer></script>
+</head>
+<body>
+  <!-- Navbar -->
+  <nav class="navbar">
+    <div class="nav-brand">🎮 Multi-Game Tournament Hub</div>
+    <button id="navToggle" class="nav-toggle" aria-label="Toggle menu">☰</button>
+    <div class="nav-links" id="navLinks">
+      <a href="#freefire">Free Fire</a>
+      <a href="#pubg">PUBG</a>
+      <a href="#minecraft">Minecraft</a>
+      <a href="#mlbb">MLBB</a>
+    </div>
+    <button id="darkModeToggle" class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+
+  <header class="header-section">
+    <h1>🎮 Multi-Game Tournament Hub</h1>
+    <p>News & Registration for Free Fire, PUBG, Minecraft & MLBB tournaments</p>
+  </header>
+
+  <main>
+    <!-- TEMPLATE FOR EACH GAME -->
+    <section id="freefire" class="section game">
+      <h2>🔥 Free Fire Tournament</h2>
+      <div class="news-registration">
+        <div class="news">
+          <h3>📰 Latest News</h3>
+          <ul>
+            <li>📢 Registration for August Free Fire Tournament is open!</li>
+            <li>🏆 Prize Pool of 50,000 INR announced.</li>
+            <li>🎯 Qualifiers start August 15th.</li>
+          </ul>
+        </div>
+        <div class="registration">
+          <h3>📝 Register Now</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+            <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+            <input type="text" name="team_name" placeholder="Team Name" required />
+            <input type="text" name="captain_name" placeholder="Captain Name" required />
+            <input type="email" name="email" placeholder="Contact Email" required />
+            <textarea name="message" placeholder="Additional Info" required></textarea>
+            <button type="submit" class="btn-submit">Submit Registration</button>
+          </form>
+
+          <a href="https://discord.gg/sampleFreeFire" target="_blank" class="btn-submit" style="margin-top:1rem; display:inline-block;">
+            Join Discord
+          </a>
+
+          <div class="payment-section">
+            <h3>💰 Pay Entry Fee</h3>
+            <p>Scan the QR code below to pay your tournament entry fee.</p>
+            <img src="money.jpeg" alt="Free Fire Payment QR Code" class="qr-code" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="pubg" class="section game">
+      <h2>🔫 PUBG Tournament</h2>
+      <div class="news-registration">
+        <div class="news">
+          <h3>📰 Latest News</h3>
+          <ul>
+            <li>📢 PUBG squads registration is live!</li>
+            <li>🎯 Show your skills & win prizes.</li>
+            <li>🗓️ Matches start August 25th.</li>
+          </ul>
+        </div>
+        <div class="registration">
+          <h3>📝 Register Now</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+            <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+            <input type="text" name="team_name" placeholder="Team Name" required />
+            <input type="text" name="captain_name" placeholder="Captain Name" required />
+            <input type="email" name="email" placeholder="Contact Email" required />
+            <textarea name="message" placeholder="Additional Info" required></textarea>
+            <button type="submit" class="btn-submit">Submit Registration</button>
+          </form>
+
+          <a href="https://discord.gg/samplePUBG" target="_blank" class="btn-submit" style="margin-top:1rem; display:inline-block;">
+            Join Discord
+          </a>
+
+          <div class="payment-section">
+            <h3>💰 Pay Entry Fee</h3>
+            <p>Scan the QR code below to pay your tournament entry fee.</p>
+            <img src="money.jpeg" alt="PUBG Payment QR Code" class="qr-code" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="minecraft" class="section game">
+      <h2>⛏️ Minecraft Tournament</h2>
+      <div class="news-registration">
+        <div class="news">
+          <h3>📰 Latest News</h3>
+          <ul>
+            <li>📢 Minecraft Survival Challenge registration open!</li>
+            <li>🎮 Play on official server with prizes.</li>
+            <li>🗓️ Event date: September 5th.</li>
+          </ul>
+        </div>
+        <div class="registration">
+          <h3>📝 Register Now</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+            <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+            <input type="text" name="team_name" placeholder="Team Name" required />
+            <input type="text" name="captain_name" placeholder="Captain Name" required />
+            <input type="email" name="email" placeholder="Contact Email" required />
+            <textarea name="message" placeholder="Additional Info" required></textarea>
+            <button type="submit" class="btn-submit">Submit Registration</button>
+          </form>
+
+          <a href="https://discord.gg/sampleMinecraft" target="_blank" class="btn-submit" style="margin-top:1rem; display:inline-block;">
+            Join Discord
+          </a>
+
+          <div class="payment-section">
+            <h3>💰 Pay Entry Fee</h3>
+            <p>Scan the QR code below to pay your tournament entry fee.</p>
+            <img src="money.jpeg" alt="Minecraft Payment QR Code" class="qr-code" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="mlbb" class="section game">
+      <h2>⚔️ MLBB Tournament</h2>
+      <div class="news-registration">
+        <div class="news">
+          <h3>📰 Latest News</h3>
+          <ul>
+            <li>📢 MLBB ranked tournament coming soon!</li>
+            <li>🏅 Compete for glory & rewards.</li>
+            <li>🗓️ Tournament starts August 20th.</li>
+          </ul>
+        </div>
+        <div class="registration">
+          <h3>📝 Register Now</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+            <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+            <input type="text" name="team_name" placeholder="Team Name" required />
+            <input type="text" name="captain_name" placeholder="Captain Name" required />
+            <input type="email" name="email" placeholder="Contact Email" required />
+            <textarea name="message" placeholder="Additional Info" required></textarea>
+            <button type="submit" class="btn-submit">Submit Registration</button>
+          </form>
+
+          <a href="https://discord.gg/sampleMLBB" target="_blank" class="btn-submit" style="margin-top:1rem; display:inline-block;">
+            Join Discord
+          </a>
+
+          <div class="payment-section">
+            <h3>💰 Pay Entry Fee</h3>
+            <p>Scan the QR code below to pay your tournament entry fee.</p>
+            <img src="money.jpeg" alt="MLBB Payment QR Code" class="qr-code" />
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Multi-Game Tournament Hub | Designed by Abhimanyu</p>
+  </footer>
+</body>
+</html>

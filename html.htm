@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Tournament Manager</title>
+  <link rel="stylesheet" href="css.css" />
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-brand">🏆 Tournament Manager</div>
+    <button class="nav-toggle" aria-label="Toggle navigation">☰</button>
+    <div class="nav-links">
+      <a href="#home">Home</a>
+      <a href="#games">Games</a>
+      <a href="#register">Register</a>
+      <a href="#events">Events</a>
+      <a href="#leaderboard">Leaderboard</a>
+      <a href="#chat">Chat</a>
+    </div>
+    <button class="dark-toggle" aria-label="Toggle dark mode">🌙</button>
+  </nav>
+
+  <header class="header-section" id="home">
+    <h1>Welcome to the Ultimate Tournament Hub</h1>
+    <p>Organize tournaments for Free Fire, PUBG, Minecraft, MLBB, and more! Register your team, check brackets, follow live scores, and stay updated about upcoming events.</p>
+  </header>
+
+  <main>
+    <!-- Games Section -->
+    <section class="section game" id="games">
+      <h2>🎮 Select Your Game</h2>
+      <div class="news-registration">
+        <div class="registration">
+          <a href="minecraft.html" class="btn-submit">
+            <img src="freefire.png" alt="Free Fire" /> Free Fire
+          </a>
+          <a href="minecraft.html" class="btn-submit">
+            <img src="PUBG-tips.jpg" alt="PUBG" /> PUBG
+          </a>
+          <a href="minecraft.html" class="btn-submit">
+            <img src="minecraft-cover.jpg" alt="Minecraft" /> Minecraft
+          </a>
+          <a href="minecraft.html" class="btn-submit">
+            <img src="unnamed.png" alt="MLBB" /> MLBB
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- Registration Form -->
+    <section class="section game" id="register">
+      <h2>📝 Register Your Team</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+        <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+        <input type="text" name="team_name" placeholder="Team Name" required />
+        <input type="text" name="captain_name" placeholder="Captain Name" required />
+        <input type="email" name="email" placeholder="Contact Email" required />
+        <textarea name="message" placeholder="Additional Info" required></textarea>
+        <button type="submit" class="btn-submit">Submit</button>
+      </form>
+    </section>
+
+    <!-- Events Section -->
+    <section class="section game" id="events">
+      <h2>📅 Upcoming Events</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+        <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+        <textarea name="message" placeholder="Event details..." required></textarea>
+        <button type="submit" class="btn-submit">Submit Event</button>
+      </form>
+    </section>
+
+    <!-- Leaderboard Section -->
+    <section class="section game" id="leaderboard">
+      <h2>🏅 Live Leaderboard</h2>
+      <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+        <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+        <textarea name="message" placeholder="Leaderboard updates..." required></textarea>
+        <button type="submit" class="btn-submit">Update Leaderboard</button>
+      </form>
+    </section>
+
+    <!-- Chat Section (Placeholder for future real-time chat integration) -->
+    <section class="section game" id="chat">
+      <h2>💬 Live Chat</h2>
+      <div id="chatBox" class="chat-box">Chat coming soon...</div>
+      <div class="chat-input-area">
+        <input id="chatInput" type="text" placeholder="Type a message..." disabled />
+        <button id="sendBtn" disabled>Send</button>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Tournament Manager | Designed by Abhimanyu</p>
+  </footer>
+
+  <script src="js.js"></script>
+</body>
+</html>
