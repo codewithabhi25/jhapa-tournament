@@ -90,6 +90,41 @@
         <button id="sendBtn" disabled>Send</button>
       </div>
     </section>
+        <section id="chess" class="section game">
+      <h2>♟️ Chess Tournament</h2>
+      <div class="news-registration">
+        <div class="news">
+          <h3>📰 Latest News</h3>
+          <ul>
+            <li>📢 Chess Blitz Tournament registration is open!</li>
+            <li>🏆 Compete against top players and win prizes.</li>
+            <li>🗓️ Matches start September 15th.</li>
+          </ul>
+        </div>
+        <div class="registration">
+          <h3>📝 Register Now</h3>
+          <form action="https://api.web3forms.com/submit" method="POST" class="api-form">
+            <input type="hidden" name="access_key" value="8d96a86a-17dd-4d98-b47e-b5d07d2a91d6" />
+            <input type="text" name="team_name" placeholder="Player Name / Team Name" required />
+            <input type="text" name="captain_name" placeholder="Captain Name (if team)" />
+            <input type="email" name="email" placeholder="Contact Email" required />
+            <textarea name="message" placeholder="Additional Info" required></textarea>
+            <button type="submit" class="btn-submit">Submit Registration</button>
+          </form>
+
+          <a href="https://discord.gg/sampleChess" target="_blank" class="btn-submit" style="margin-top:1rem; display:inline-block;">
+            Join Discord
+          </a>
+
+          <div class="payment-section">
+            <h3>💰 Pay Entry Fee</h3>
+            <p>Scan the QR code below to pay your tournament entry fee.</p>
+            <img src="money.jpeg" alt="Chess Payment QR Code" class="qr-code" />
+          </div>
+        </div>
+      </div>
+    </section>
+
   </main>
 
   <footer>
